@@ -1,0 +1,21 @@
+    com/
+    └── sistema/
+        └── reservas/
+            ├── model/               <-- Clases de dominio y jerarquías
+            │   ├── Vuelo.java (Abstracta)
+            │   ├── VueloEconomico.java
+            │   ├── VueloEjecutivo.java
+            │   ├── Pasajero.java
+            │   ├── Reserva.java
+            │   ├── EstadoReserva.java (Abstracta)
+            │   ├── ReservaConfirmada.java
+            │   └── ReservaCancelada.java
+            │
+            ├── exception/           <-- Excepciones personalizadas
+            │   ├── AsientoNoDisponibleException.java
+            │   └── VueloNoEncontradoException.java
+            │
+            ├── service/             <-- Controladores / Lógica de negocio
+            │   └── GestorReservas.java
+            │
+            └── Main.java            <-- Punto de entrada y pruebas del sistema
