@@ -24,4 +24,39 @@ public class GestorReservas {
         vuelos.add(vuelo);
     }
 
+    public Pasajero buscarPasajero(String cedula){
+        return pasajeros.stream()
+        .filter(p -> p.getCedula()equals(cedula))
+        .findFirst()
+        .orElse(null);
+    }
+
+    public Vuelo buscarVuelo(String codigo){
+        return vuelos.stream()
+        .filter(v ->v.getCodigo().equalsIgnoreCase(codigo))
+        .findFirst()
+        .orElse(null);
+    }
+
+    public Reserva crearReserva(String cedulaPasajero, String codigoVuelo, int numeroAsiento){
+        Pasajero pasajero = buscarPasajero(cedulaPasajero);
+        Vuelo vuelo = buscarVuelo(codigoVuelo);
+
+        if (pasajero == null || vuelo == null){
+            throw new IllegalArgumentException("Pasajero o vuelo no registrado.");
+        }
+
+        if(!vuelo.esAsientoDisponible(numeroAsiento)){
+            throw new IllegalStateException("El asiento"+numeroAsiento+"no esta disponible.");
+        }
+
+        vuelo.asignarAsiento(numeroAsiento);
+        String codigoReserva = "RES-"+ UUID.randomUUID().toString().substring(0,8);
+        Reserva reserva = new Reserva (codigoReserva, pasajero, vuelo, numeroAsiento, new ReservaConfirmada());
+
+        reservas.add(reserva);
+        return reserva;
+    }
+
+
 }
