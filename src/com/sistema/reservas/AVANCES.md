@@ -13,3 +13,4 @@ Se adjunta un documento .txt como guia para seguir realizando el resto de clases
 Realicé la clase Pasajero y la clase Reserva con sus respectivos métodos y atributos según el UML ya realizado 
 * **Nombre 3** - Ximena Talaga Montenegro
 * **Nombre 4** - Nelson Javier Escobar
+Realicé la clase GestorReservas que utiliza las demas clases para unificar la logica de ellas en el apartado de controlar las reservas y sus pasajeros por medio de metodos para generar la reserva con listas
