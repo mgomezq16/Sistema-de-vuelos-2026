@@ -1,3 +1,5 @@
+package com.sistema.reservas.model;
+
 public class Pasajero {
     
     private String cedula;
