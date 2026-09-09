@@ -1,19 +1,19 @@
 Sistema de Reservas de Vuelos
 
-Descripción
+### Descripción
 
 Sistema desarrollado en Java para gestionar vuelos, pasajeros y
 reservas de asientos. El sistema permite registrar pasajeros,
 registrar vuelos económicos y ejecutivos, realizar reservas y
 cancelarlas, controlando la disponibilidad de los asientos.
 
-Objetivo
+### Objetivo
 
 Desarrollar un sistema aplicando los principios de la Programación
 Orientada a Objetos (POO), haciendo uso de encapsulamiento,
 abstracción, herencia y polimorfismo.
 
-Funcionalidades
+### Funcionalidades
 
 - Registrar pasajeros.
 - Registrar vuelos.
@@ -25,17 +25,17 @@ Funcionalidades
 - Consultar información de las reservas.
 - Diferenciar vuelos económicos y ejecutivos.
 
-Tipos de vuelos
+### Tipos de vuelos
 
-### Vuelo Económico
+Vuelo Económico
 - Capacidad de 150 pasajeros.
 - No incluye servicio de comida.
 
-### Vuelo Ejecutivo
+Vuelo Ejecutivo
 - Capacidad de 50 pasajeros.
 - Incluye servicio de comida.
 
-Estructura del sistema
+### Estructura del sistema
 
 El proyecto está compuesto principalmente por:
 
@@ -49,7 +49,7 @@ El proyecto está compuesto principalmente por:
 - `ReservaCancelada`
 - `GestorReservas`
 
-Principios de POO
+### Principios de POO
 
 Encapsulamiento
 Los atributos de las clases se mantienen protegidos y se accede
@@ -68,14 +68,14 @@ Polimorfismo
 Los métodos abstractos pueden presentar diferentes
 comportamientos dependiendo de la clase que los implemente.
 
-Tecnologías
+### Tecnologías
 
 - Java
 - Programación Orientada a Objetos
 - UML
 - VS Code
 
-Ejecución
+### Ejecución
 
 1. Clonar el repositorio.
 2. Abrir el proyecto en el IDE.
